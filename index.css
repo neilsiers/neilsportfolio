@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Ramunebear;
+    src: url(Ramunebear-Regular.otf);
+}
+body {
+    background-image: url('images/picnic.jpg');
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #549bf4;
+    font-size: 5vw;
+    margin: 5vw;
+}
+.header h1{
+    
+}
+.header img{
+    width: 70vw;
+    margin: 5vw;
+}
