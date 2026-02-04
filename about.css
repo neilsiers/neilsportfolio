@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Ramunebear;
+    src: url(Ramunebear-Regular.otf);
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #549bf4 #549cf43c; 
+}
+body {
+    width: 612px;
+    height: 344px;
+    background-image: url('images/picnic.jpg');
+    background-repeat: repeat;
+    background-position: 0 0;
+    animation: slide 10s linear infinite;
+}
+    @keyframes slide {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -400px 0;
+    }
+    }

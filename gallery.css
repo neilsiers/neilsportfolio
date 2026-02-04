@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Ramunebear;
+    src: url(Ramunebear-Regular.otf);
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #549bf4 #549cf43c; 
+}
+body {
+    background-image: url('images/picnic.png');
+    background-repeat: repeat;
+    background-position: 0 0;
+    animation: slide 10s linear infinite;
+}
+    @keyframes slide {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -200px 0;
+    }
+    }
+/**GALLERY CONTAINER**/
+#gallerycontainer {
+    border: 20px solid;
+    border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+    border-image-slice: fill;
+    border-radius: 20px;
+    background-color: #cd2e4c;
+    background-clip: padding-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
+    box-shadow: 0px 5px 20px #414148;
+}
+/**GAL NAV**/
+#galnav {
+    background-color: #549bf4;
+    border: 20px solid;
+    border-image: url('https://i.postimg.cc/zVJBz1m3/bordefr.png') 18 round;
+    border-image-slice: fill;
+    background-clip: padding-box;
+    height: 40vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+}
+#galnav a {
+    text-decoration: none;
+    color: #f8d44c;
+    padding: 0px 0px 40px 0px;
+}
+#galnav a:hover {
+    color: #fbf3a1;
+    transition: color 0.5s;
+}
+/**GALLERY**/
+#gallery {
+    border: 20px solid;
+    border-image: url('https://i.ibb.co/0jF2LBzY/border.png') 20 round;
+    border-image-slice: fill;
+    background-color: #fbf3a1;
+    background-clip: padding-box;
+    height: 40vw;
+    width: 68vw;
+    padding: 20px;
+}
+.hidden {
+    display: none;
+}
+/**GRAPHICS**/
+#graphics {
+    display: block;
+}
+/**ANIMATION**/
+
+/**PERSONAL**/
