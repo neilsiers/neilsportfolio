@@ -29,14 +29,15 @@ body {
 /*LABEL*/
 .label {
     display: flex;
-    justify-content: right;
+    justify-content: left;
     align-items: center;
     text-align: center;
 }
 .label .head{
     position: absolute;
     z-index: 2;
-    width: 9vw;
+    width: 8vw;
+    right: 240px;
     rotate: -15deg;
 }
 .label .bar{
@@ -47,13 +48,52 @@ body {
 .label h1 {
     position: absolute;
     z-index: 1;
-    left: 0;
+    left: 50px;
     color: #414148;
     padding-left: 41px;
-    font-size: 3.3vw;
+    font-size: 2.8vw;
+}
+/**FACTS**/
+.facts {
+    color: #fbf3a1;
+    background-color: #549bf4;
+}
+.fact {
+    
 }
 /**ABOUT**/
-
+#aboutme {
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    padding-left: 100px;
+}
+#aboutme .label {
+    position: absolute;
+    z-index: 1;
+    top: 130px;
+}
+#aboutme .facts {
+    position: absolute;
+    z-index: 1;
+    bottom: 300px;
+}
+#aboutme #about {
+    position: relative;
+    z-index: 0;
+}
+#about {
+    width: 70vw;
+}
+#about .floating {
+    position: relative;
+    z-index: 1;
+    top: 500px;
+}
+#about .textbox {
+    position: relative;
+    z-index: 0;
+}
 /**TEXT**/
 .textbox {
     position: relative;
@@ -68,7 +108,6 @@ body {
     background-clip: padding-box;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     margin: 50px;
     padding: 50px;
@@ -79,7 +118,8 @@ body {
 /**ME**/
 #about .me {
     width: 30vw;
-    right: 0;
+    left: 800px;
+    top: -150px;
     position: absolute;
     z-index: 1;
     animation: bears 3s ease-in-out infinite;
@@ -138,3 +178,92 @@ body {
                 transform: translateY(0);
         }
     }
+/**FOOTER**/
+#footer {
+    height: 210px;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url('images/cloudfooter.png');
+    background-repeat: repeat;
+    background-position: 0 0;
+    animation: float 30s linear infinite;
+}
+    @keyframes float {
+
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 400px 0;
+    }
+    }
+.footerinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.footerlinks .gmail {
+    position: relative;
+    display: inline-block; 
+    animation-name: cloud1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-image: url('images/cloud.png');
+    background-size: 7vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+@keyframes cloud1 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px); 
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.footerlinks .linkedin {
+    position: relative;
+    display: inline-block;
+    animation-name: cloud2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-image: url('images/cloud2.png');
+    background-size: 7vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 30px;
+}
+@keyframes cloud2 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.footerlinks a{
+    text-decoration: none;
+    color: #414148;
+    font-size: 1.5vw;
+}
+.footerlinks a:hover{
+    color: #549bf4;
+    transition: color 0.6s;
+}
+.copyright {
+    padding-top: 60px;
+    justify-content: center;
+    text-align: center;
+    color: #414148;
+}
