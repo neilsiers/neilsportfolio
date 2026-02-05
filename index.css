@@ -33,7 +33,7 @@ hr {
 }
 /*MAIN*/
 #maincontent {
-    width: 700px;
+    width: 800px;
 }
 /**HEADER**/
 .headertext {
@@ -122,7 +122,7 @@ hr {
     z-index: 2;
     width: 22vw;
     left: 51vw;
-    bottom: 29vw;
+    bottom: 31vw;
     animation: bears 3s ease-in-out infinite;
 }
     @keyframes bears {
