@@ -3,7 +3,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleria</title>
-    <script src="script.js" defer></script>
     <link href="gallery.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
     <script src="gallery.js" defer></script>
@@ -29,15 +28,33 @@
                 </div>
                 <div id="gallery">
                     <div id="graphics">
-                        <p>placeholder1</p>
+                        <img id="galleryimg" src="images/me.png" onclick="toggleZoom()">
                     </div>
                     <div id="animation" class="hidden">
-                        <p>placeholder2</p>
+                        <img id="galleryimg" src="#" onclick="toggleZoom()">
                     </div>
                     <div id="personal" class="hidden">
-                        <p>placeholder3</p>
+                        <img id="galleryimg" src="#" onclick="toggleZoom()">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="footerinfo">
+                <div class="footerlinks">
+                    <a 
+                        href="https://www.linkedin.com/in/aaronsiers/"
+                        class="linkedin"
+                    >
+                        linkedin
+                    </a>
+                    <a href="siersbear@gmail.com" class="gmail">
+                        gmail
+                    </a>
+                </div>
+                <span class="copyright">
+                    <p>©Neil Siers 2026</p>
+                </span>
             </div>
         </div>
     </body>

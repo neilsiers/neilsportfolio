@@ -192,7 +192,7 @@ body {
         }
     }
 .floating .cloud1 {
-    right: -180px;
+    right: -210px;
     bottom: 20px;
     width: 6vw;
     position: absolute;
@@ -213,8 +213,8 @@ body {
         }
     }
 .floating .cloud2 {
-    left: 0px;
-    bottom: 30px;
+    left: -30px;
+    bottom: 190px;
     width: 6vw;
     position: absolute;
     z-index: 2;

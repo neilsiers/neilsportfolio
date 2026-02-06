@@ -3,6 +3,7 @@
     margin: 0;
     font-family: Ramunebear;
     src: url(Ramunebear-Regular.otf);
+    cursor: url(images/cursorpoint.png), auto !important;
 }
 html {
     scrollbar-width: thin;
@@ -34,6 +35,77 @@ hr {
 /*MAIN*/
 #maincontent {
     width: 800px;
+}
+/*MUSIC PLAYER*/
+#player {
+    background-image: url(images/mp/egg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vw;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#player .bearbox {
+    margin-top: 120px;
+}
+.bearbox {
+    background-color: #549bf4;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 15px;
+    min-width: 10vw;
+    box-shadow: inset 0px 0px 23px -9px rgba(0,0,0,0.75);
+}
+.bearbox #mpbear {
+    justify-content: baseline;
+    align-items: center;
+}
+#mpbear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vw;
+    width: 100px;
+}
+#mpbear img {
+    width: auto;
+    height: 8vw;
+    image-rendering: pixelated;
+}
+#mpbear .idle {
+    position: absolute;
+    z-index: 0;
+}
+#mpbear .dance {
+    position: relative;
+    z-index: 1;
+}
+.buttons button {
+    border: none;
+    background-color: transparent;
+}
+.mpbutton {
+    font-size: 1vw;
+    color: #fbf3a1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    padding: 15px;
+}
+.mpbutton p {
+    position: absolute;
+    z-index: 1;
+}
+.mpbutton img {
+    position: relative;
+    z-index: 0;
+    width: 2vw;
 }
 /**HEADER**/
 .headertext {
@@ -87,11 +159,19 @@ hr {
     height: 40vw;
     padding: 20px;
 }
+.boxes #player {
+    position: absolute;
+    z-index: 1;
+    right: 60;
+    top: 230px;
+    rotate: -15deg;
+}
 /**LEFT**/
 #intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     color: #414148;
     background-color: #f8d44c;
     border-radius: 5px;
@@ -110,7 +190,56 @@ hr {
     color: #549bf4;
 }
 #intro img {
+    width: 13vw;
     padding: 20px;
+    transition: rotate 0.3s;
+}
+#intro img:hover {
+    rotate: 5deg;
+    transition-timing-function: ease;
+}
+#status {
+    color: #414148;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.sleft{
+    border: 20px solid;
+    border-image: url('https://i.ibb.co/jk54gphg/uh.png') 18 round;
+    border-image-slice: fill;
+    background-color: #a7c44f;
+    background-clip: padding-box;
+    width: 240px;
+    position: relative;
+    z-index: 0;
+}
+.sleft h1{
+    color: #f9f8f4;
+    font-size: 3vw;
+}
+.sleft p{
+    font-size: 1.2vw;
+}
+.sright {
+    position: relative;
+    z-index: 0;
+}
+.stop {
+    position: absolute;
+    z-index: 1;
+    bottom: -50px;
+    left: -74px;
+}
+.stop p {
+    position: absolute;
+    z-index: 1;
+    width: 100px;
+    top: 20px;
+    right: 0px;
+}
+.stop img {
+    width: 13vw;
 }
 /**RIGHT**/
 .hidden p{
@@ -232,10 +361,32 @@ hr {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/*MP LIST*/
+#musiclist {
+    background-color: #a7c44f;
+    border: 20px solid;
+    border-image: url('https://i.ibb.co/V0wgHr7H/gre.png') 18 round;
+    border-image-slice: fill;
+    background-clip: padding-box;
+    position: absolute;
+    z-index: 0;
+    right: 160;
+    top: 170px;
+}
+#musiclist .dropdown {
+    display: flex;
+    flex-direction: column;
+}
+#musiclist .dropdown h1{
+    color: #f8d44c;
+}
+#musiclist .dropdown ol{
+    color: #fbf3a1;
+}
 /**FOOTER**/
 #footer {
     height: 200px;
-    width: 100vw;
+    width: 101vw;
     overflow: hidden;
     background-image: url('images/cloudfooter.png');
     background-repeat: repeat;
@@ -320,4 +471,21 @@ hr {
     justify-content: center;
     text-align: center;
     color: #414148;
+}
+
+/*RESPONSIVE DESIGN*/
+
+/*DESKTOP*/
+@media (min-width: 1921px) {
+}
+/*LAPTOP*/
+@media (min-width:768px) and (max-width: 1920px) {
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 767px) {
+    
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    
 }

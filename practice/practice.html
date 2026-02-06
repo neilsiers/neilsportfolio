@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <script src="practice.js" defer></script>
+    <link href="practice.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
+</head>
+    <body>
+        <!--changing HTML attribute values (src)-->
+        <div>
+            <button onclick="document.getElementById('fuck').src='testimg1.gif'">
+                CLICK THIS
+            </button>
+            <img id="fuck" src="https://media.tenor.com/Comp_iIhz44AAAAj/yui-yui-hirasawa.gif">
+            <button onclick="document.getElementById('fuck').src='testimg2.gif'">
+                CLICK THIS TOO
+            </button>
+        </div>
+                <hr>
+        <!--hiding/revealing HTML elements (style.display)-->
+        <div>
+            <p id="demo">and then ill disappear</p>
+            <button 
+                type="button"
+                onclick="document.getElementById('demo').style.display='none'"
+            >
+                hide lol
+            </button>
+        </div>
+        <div>
+            <p id="BOOM" style="display: none;">BOO</p>
+            <button 
+                type="button"
+                onclick="document.getElementById('BOOM').style.display='block'"
+            >
+                BIG REVEAL
+            </button>
+        </div>
+        <hr>
+        <!--js functions and events-->
+        <div>
+            <p id="funk">
+                lololol what
+            </p>
+            <button type="button" onclick="myFunction()">
+                press me
+            </button>
+        </div>
+        <hr>
+        <div>
+            <h2>CONSTANT</h2>
+            <p id="const">
+            </p>
+        </div>
+        <hr>
+        <!--music player tut-->
+        <div id="music-player">
+            <img id="song-image" src="testimg1.gif">
+            <div id="song-name">song</div>
+
+            <input id="slider-song" type="range">
+
+            <div id="music-buttons">
+                <p id="shuffle">↻</p>
+                <p id="prev">←</p>
+                <p id="play">►</p>
+                <p id="next">➝</p>
+                <p id="repeat">↺</p>
+            </div>
+        </div>
+        <audio controls src="./test.mp3"></audio>
+    </body>
+</html>

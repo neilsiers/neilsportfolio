@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neil's Portfolio</title>
-    <script src="script.js" defer></script>
+    <script src="index.js" defer></script>
     <link href="index.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/logo.png" sizes="32x32">
 </head>
@@ -24,18 +24,36 @@
                                 <div class="lefttext">
                                     <h1>KUMUSTA!!</h1>
                                     <p>
-                                        welcome to my portfolio ~
-                                        all drawn and coded by
+                                        welcome to my portfolio ~ all graphics 
+                                        and illustrations were drawn by
                                     </p>
                                     <a href="about.html">
                                         yours truly
                                     </a>
                                 </div>
                                 <div class="introimg">
-                                    <img src="#">
+                                    <img src="images/yourstruly.gif">
                                 </div>
                             </div>
                             <hr>
+                            <div id="status">
+                                <div class="stop">
+                                    <p>this site is best viewed on laptop</p>
+                                    <img src="images/uhoh.png">
+                                </div>
+                                <div class="sleft">
+                                    <h1>STATUS</h1>
+                                    <p id="feeling"></p>
+                                    <p id="commissions"></p>
+                                    <p id="located"></p>                                    
+                                </div>
+                                <div class="sright">
+                                    <h1>LATEST ARTWORK</h1>
+                                    <a href="gallery.html" class="latest">
+                                        <img src="#">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="rightbox">
@@ -73,12 +91,52 @@
                             <h1>Site Updates</h1>
                             <div id="updates">
                                 <span class="update">
+                                    <h4 style="color:#cd2e4c">[2.5.26]</h4>
+                                    <p>
+                                        Index, About, Gallery updated. Images
+                                        added.
+                                    </p>
+                                </span>
+                                <span class="update">
                                     <h4 style="color:#cd2e4c">[2.4.26]</h4>
                                     <p>
                                         Site created, layout established
                                     </p>
                                 </span>
                             </div>
+                        </div>
+                    </div>
+                    <div id="player">
+                        <audio id="music"></audio>
+                        <div class="bearbox">
+                            <div id="mpbear">
+                                <img class="idle" src="images/mp/idle.gif">
+                                <img class="dance" src="images/mp/dance.gif">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="mpbutton">
+                                <p>←</p>
+                                <img src="images/mp/button.png">
+                            </button>
+                            <button class="mpbutton">
+                                <p>▶︎</p>
+                                <img src="images/mp/button.png">
+                            </button>
+                            <button class="mpbutton">
+                                <p>→</p>
+                                <img src="images/mp/button.png">
+                            </button>
+                        </div>
+                    </div>
+                    <div id="musiclist">
+                        <div class="dropdown">
+                            <h1>MP3 List</h1>
+                            <ol>
+                                <li>Нежное Это - Меньше чем три</li>
+                                <li>Нежное Это - Люблю!</li>
+                                <li>serani poji - セラニポージ</li>
+                            </ol>
                         </div>
                     </div>
                 </div>
