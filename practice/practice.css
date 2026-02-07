@@ -6,3 +6,31 @@ body div {
 #music-buttons {
     display: flex;
 }
+/*SCROLL*/
+.main {
+  width: 250px;
+  height: 300px;
+  padding: 2px;
+  overflow-y: scroll;
+  border: 2.5px solid black;
+}
+
+p {
+  margin: 0;
+}
+
+.main::-webkit-scrollbar { 
+  /* this sets the width of the bar, in the div.main (::-webkit-scrollbar is fro the body/html)*/
+  width: 20px; /* change for scrollbar width */
+}
+
+.main::-webkit-scrollbar-track { 
+  /* scrollbar background */
+  background-color: lightgray;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-color: red;
+  background-image: url("https://picsum.photos/100/400");
+  background-size: cover;
+}
