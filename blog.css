@@ -128,7 +128,7 @@ hr {
     position: absolute;
     z-index: 1;
     bottom: -60;
-    left: 330;
+    left: 310;
     transition: width 0.5s, filter 0.5s;
 }
 #leftcolumn .home img:hover {

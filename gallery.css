@@ -227,3 +227,23 @@ body {
     text-align: center;
     color: #414148;
 }
+/*HOME*/
+#gallerybox .home {
+    position: absolute;
+    z-index: 2;
+    bottom: 100px;
+    left: -170px;
+}
+#gallerybox .home img{
+    width: 15vw;
+    position: absolute;
+    z-index: 1;
+    bottom: -60;
+    left: 310;
+    transition: width 0.5s, filter 0.5s;
+}
+#gallerybox .home img:hover {
+    width: 15.1vw;
+    filter: drop-shadow(0 0 0.75rem #fbf3a1);
+    transition-timing-function: ease;
+}

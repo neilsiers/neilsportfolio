@@ -7,9 +7,9 @@ const comms = {type:"comms"};
 comms.now = "closed";
 document.getElementById("commissions").innerHTML = "commissions: " + comms.now; 
 
-const loc = {type:"location"};
-loc.now = "in the Orlando area";
-document.getElementById("located").innerHTML = "located: " + loc.now; 
+const cur = {type:"currently"};
+cur.now = "snoozing";
+document.getElementById("currently").innerHTML = "currently: " + cur.now; 
 
 /*MUSICPLAYER */
 // ===== ELEMENTS =====
