@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Ramunebear;
+    font-family: Ramunebear, Helvetica, Arial, sans-serif;
     src: url(Ramunebear-Regular.otf);
     cursor: url(images/cursorpoint.png), auto !important;
 }
@@ -31,6 +31,10 @@ hr {
     border: #f8d44c 3px dotted;
     border-radius: 5px;
     margin: 10px;
+}
+@font-face {
+    font-family: 'Ramunebear';
+    src: url('Ramunebear-Regular.woff') format('woff');
 }
 /*MAIN*/
 #maincontent {
@@ -485,14 +489,301 @@ hr {
 /*DESKTOP*/
 @media (min-width: 1921px) {
 }
-/*LAPTOP*/
+/*LAPTOP - WIP*/
 @media (min-width:768px) and (max-width: 1920px) {
 }
 /*TABLET*/
 @media (min-width: 481px) and (max-width: 767px) {
-    
+    /*HIDDEN*/
+    #maincontent #player {
+        width: auto;
+        display: none;
+    }
+    #maincontent #musiclist {
+        display: none;
+    }
+    #maincontent #updates {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    .rightnav h1 {
+        display: none;
+    }
+    .stop {
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .hvrimg {
+        display: none;
+    }
+    /*MAIN*/
+    #maincontent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .container {
+        padding-top: 80px;
+    }
+    .leftbox {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        width: 200px;
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        background-color: #cd2e4c;
+        background-clip: padding-box;
+        padding: 30px;
+        width: 100vw;
+        height: auto;
+    }
+    .leftcontent {
+        flex-direction: column;
+        background-color: #f9f8f4;
+        height: auto;
+        border-radius: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightbox {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        z-index: 0;
+        justify-content: baseline;
+        align-items: baseline;
+        background-color: #549bf4;
+        border: 20px solid;
+        border-image: url('https://i.postimg.cc/zVJBz1m3/bordefr.png') 18 round;
+        border-image-slice: fill;
+        background-clip: padding-box;
+        height: auto;
+        left: 140px;
+        top: 119px;
+        padding: 20px;
+    }
+    #status {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #status h1 {
+        font-size: 7vw;
+    }
+    #status p {
+        font-size: 5vw;
+    }
+    .headertext h1{
+        font-size: 10vw;
+        color: #414148;
+    }
+    .headertext h3{
+        font-size: 5vw;
+        color: #549bf4;
+    }
+    /*LEFT*/
+    #intro {
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;
+    }
+    #intro img {
+        width: 35vw;
+    }
+    .sleft{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+    .sright img{
+        width: 45vw;
+    }
+    /*RIGHT*/
+    .rightnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+    .rightnav a, button{
+        padding: 0px 15px 0px 15px;
+        font-size: 4vw;
+    }
+    /*FOOTER*/
+    #footer {
+        overflow: hidden;
+        width: 190vw;
+    }
+    .footerlinks .gmail {
+        background-size: 30vw;
+        padding: 50px;
+    }
+    .footerlinks .linkedin {
+        background-size: 26vw;
+        padding: 40px;
+    }
+    .footerlinks a{
+        font-size: 6vw;
+    }
+    .footerlinks a:active{
+        color: #549bf4;
+        transition: color 0.6s;
+    }
 }
 /*MOBILE*/
 @media (max-width: 480px) {
-    
+    /*HIDDEN*/
+    #maincontent #player {
+        width: auto;
+        display: none;
+    }
+    #maincontent #musiclist {
+        display: none;
+    }
+    #maincontent #updates {
+        display: none;
+    }
+    .hidden {
+        display: none;
+    }
+    .rightnav h1 {
+        display: none;
+    }
+    .stop {
+        display: none;
+    }
+    .dropdown-content {
+        display: none;
+    }
+    .hvrimg {
+        display: none;
+    }
+    /*MAIN*/
+    #maincontent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .container {
+        padding-top: 80px;
+    }
+    .leftbox {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        width: 200px;
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        background-color: #cd2e4c;
+        background-clip: padding-box;
+        padding: 30px;
+        width: 100vw;
+        height: auto;
+    }
+    .leftcontent {
+        flex-direction: column;
+        background-color: #f9f8f4;
+        height: auto;
+        border-radius: 10px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightbox {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        z-index: 0;
+        justify-content: baseline;
+        align-items: baseline;
+        background-color: #549bf4;
+        border: 20px solid;
+        border-image: url('https://i.postimg.cc/zVJBz1m3/bordefr.png') 18 round;
+        border-image-slice: fill;
+        background-clip: padding-box;
+        height: auto;
+        left: 190px;
+        top: 80px;
+        padding: 20px;
+    }
+    #status {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #status h1 {
+        font-size: 7vw;
+    }
+    #status p {
+        font-size: 5vw;
+    }
+    .headertext h1{
+        font-size: 10vw;
+        color: #414148;
+    }
+    .headertext h3{
+        font-size: 5vw;
+        color: #549bf4;
+    }
+    /*LEFT*/
+    #intro {
+        display: flex;
+        flex-direction: column;
+        font-size: 4vw;
+    }
+    #intro img {
+        width: 35vw;
+    }
+    .sleft{
+        display: flex;
+        flex-direction: column;
+    }
+    .sright img{
+        width: 45vw;
+    }
+    /*RIGHT*/
+    .rightnav {
+        display: flex;
+        flex-direction: row;
+        justify-content: baseline;
+        align-items: baseline;
+    }
+    .rightnav a, button{
+        padding: 0px 15px 0px 15px;
+        font-size: 4vw;
+    }
+    /*FOOTER*/
+    #footer {
+        overflow: hidden;
+        width: 190vw;
+    }
+    .footerlinks .gmail {
+        background-size: 30vw;
+    }
+    .footerlinks .linkedin {
+        background-size: 30vw;
+    }
+    .footerlinks a{
+        font-size: 6vw;
+    }
+    .footerlinks a:active{
+        color: #549bf4;
+        transition: color 0.6s;
+    }
 }

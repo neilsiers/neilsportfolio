@@ -207,3 +207,126 @@ body {
                 transform: translateY(0);
         }
     }
+/*DESKTOP*/
+@media (min-width: 1921px) {
+}
+/*LAPTOP - WIP*/
+@media (min-width:768px) and (max-width: 1920px) {
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 767px) {
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    #full {
+        padding-top: 50px;
+    }
+    /*CONTAINER*/
+    #contactcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vw;
+    }
+    #top {
+        position: absolute;
+        z-index: 1;
+        left: -50;
+        top: 70;
+    }
+    #middle {
+        position: relative;
+        z-index: 2;
+        right: -60;
+        bottom: -190;
+    }
+    #textbox {
+        position: absolute;
+        z-index: 0;
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        background-color: #cd2e4c;
+        background-clip: padding-box;
+        text-align: center;
+        color: #fbf3a1;
+        width: 350px;
+        right: 60px;
+        top: 50;
+    }
+    #bottom {
+        position: absolute;
+        z-index: 2;
+        top: 170px;
+        right: 50px;
+    }
+    /*MARQUEE*/
+    .marquee img {
+        width: 25vw;
+    }
+    .marquee {
+        top: 6em;
+        position: relative;
+    }
+    .marquee a:hover {
+        animation-play-state: paused;
+    }
+    .marquee a p:hover {
+        color: #cd2e4c;
+    }
+    /*CALL IMG*/
+    .phone {
+        position: relative;
+        z-index: 0;
+        width: 80vw;
+    }
+    .talk {
+        position: absolute;
+        z-index: 1;
+        width: 10vw;
+        left: 100px;
+        top: -20px;
+    }
+    @keyframes phone {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px); 
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    /*SOCIALS*/
+    .marquee a p {
+        font-size: 5vw;
+    }
+    /*HOME*/
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .home p {
+        position: absolute;
+        z-index: 1;
+        font-size: 5vw;
+        color: #fbf3a1;
+        transition: color 0.5s;
+    }
+    .home p:hover {
+        color: #cd2e4c;
+        transition-timing-function: ease-in-out;
+    }
+    .home img {
+        position: relative;
+        z-index: 0;
+        width: 20vw;
+    }
+    #bottom .home {
+        padding-left: 100px;
+        animation: home 3s ease-in-out infinite;
+    }
+}
