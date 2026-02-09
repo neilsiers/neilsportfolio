@@ -214,6 +214,9 @@ hr {
     position: relative;
     z-index: 0;
 }
+.artwork {
+    width: 10vw;
+}
 .sleft h1{
     color: #f9f8f4;
     font-size: 3vw;
@@ -224,6 +227,10 @@ hr {
 .sright {
     position: relative;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .stop {
     position: absolute;

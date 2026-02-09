@@ -17,9 +17,3 @@ links.forEach(link => {
         target.style.display = "block";
     });
 });
-/*ZOOM ON CLICK*/
-const img = document.getElementById("galleryimg");
-
-function toggleZoom() {
-    img.classList.toggle("zoomed");
-}

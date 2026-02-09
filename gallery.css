@@ -38,6 +38,11 @@ body {
     position: absolute;
     z-index: 1;
 }
+marquee {
+    background-color: #f8d44c;
+    color: #cd2e4c;
+    font-size: 1.2vw;
+}
 /*LABEL*/
 .label {
     display: flex;
@@ -108,6 +113,8 @@ body {
     border-image-slice: fill;
     background-color: #fbf3a1;
     background-clip: padding-box;
+    overflow: auto;
+    white-space: nowrap;
     height: 40vw;
     width: 68vw;
     padding: 20px;
@@ -124,18 +131,14 @@ body {
     cursor: pointer;
     transition: transform 0.4s ease; 
 }
-
-.zoomed {
-    transform: scale(2); 
-    z-index: 10; 
-    position: relative; 
-}
 /**GRAPHICS**/
 #graphics {
     display: block;
 }
 /**ANIMATION**/
-
+#animation img {
+    width: 15vw;
+}
 /**PERSONAL**/
 
 /**FOOTER**/

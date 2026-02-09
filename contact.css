@@ -9,8 +9,6 @@ html {
   scrollbar-color: #549bf4 #549cf43c; 
 }
 body {
-    width: 612px;
-    height: 344px;
     background-image: url('images/picnic.jpg');
     background-repeat: repeat;
     background-position: 0 0;
@@ -25,4 +23,187 @@ body {
     to {
         background-position: -400px 0;
     }
+    }
+/*SITE*/
+/*CONTAINER*/
+#contactcontainer {
+    display: flex;
+    justify-content: center;
+    padding: 5vw;
+}
+#top {
+    position: absolute;
+    z-index: 0;
+    left: 300;
+    top: -30;
+}
+#middle {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+}
+#textbox {
+    position: absolute;
+    z-index: 1;
+    border: 20px solid;
+    border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+    border-image-slice: fill;
+    background-color: #cd2e4c;
+    background-clip: padding-box;
+    text-align: center;
+    color: #fbf3a1;
+    width: 350px;
+    right: 360px;
+}
+#bottom {
+    position: absolute;
+    z-index: 2;
+    bottom: 400px;
+    right: 390px;
+}
+/*MARQUEE*/
+.marquee img {
+    width: 12vw;
+}
+.marquee {
+    top: 6em;
+    position: relative;
+}
+.marquee a:hover {
+    animation-play-state: paused;
+}
+.marquee a p:hover {
+    color: #cd2e4c;
+}
+/*CALL IMG*/
+.phone {
+    position: relative;
+    z-index: 0;
+    width: 40vw;
+}
+.talk {
+    position: absolute;
+    z-index: 1;
+    width: 10vw;
+    left: 90px;
+    top: -40px;
+}
+@keyframes phone {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px); 
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+/*SOCIALS*/
+.marquee a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.marquee a p {
+    position: absolute;
+    z-index: 1;
+    font-size: 3vw;
+    color: #414148;
+}
+.marquee a img {
+    position: relative;
+    z-index: 0;
+}
+.linkedin {
+    padding-left: 100px;
+    animation: bubble 3s ease-in-out infinite;
+}
+.gmail {
+    padding-left: -50px;
+    animation: bubble2 3s ease-in-out infinite;
+}
+.discord {
+    padding-left: 100px;
+    animation: bubble3 3s ease-in-out infinite;
+}
+    @keyframes bubble {
+        0% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(-10px);
+        }
+
+        100% {
+                transform: translateY(0);
+        }
+    }
+        @keyframes bubble2 {
+        0% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(10px);
+        }
+
+        100% {
+                transform: translateY(0);
+        }
+    }
+            @keyframes bubble3 {
+        0% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(25px);
+        }
+
+        100% {
+                transform: translateY(0);
+        }
+    }
+/*HOME*/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.home p {
+    position: absolute;
+    z-index: 1;
+    font-size: 3vw;
+    color: #fbf3a1;
+    transition: color 0.5s;
+}
+.home p:hover {
+    color: #cd2e4c;
+    transition-timing-function: ease-in-out;
+}
+.home img {
+    position: relative;
+    z-index: 0;
+    width: 12vw;
+}
+#bottom .home {
+    padding-left: 100px;
+    animation: home 3s ease-in-out infinite;
+}
+    @keyframes home {
+        0% {
+                transform: translateY(0);
+        }
+
+        50% {
+                transform: translateY(-10px);
+        }
+
+        100% {
+                transform: translateY(0);
+        }
     }

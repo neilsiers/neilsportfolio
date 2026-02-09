@@ -52,6 +52,10 @@ hr {
 .image {
     width: 10vw;
 }
+.content {
+    display: flex;
+    flex-direction: column;
+}
 /*BANNER*/
 #banner {
     position: absolute;
@@ -119,6 +123,7 @@ hr {
 .content a {
     text-decoration: none;
     color: #fbf3a1;
+    padding-top: 10px;
 }
 .content a:hover {
     color: #f8d44c;
@@ -127,7 +132,6 @@ hr {
     width: 10vw;
     position: absolute;
     z-index: 1;
-    bottom: -60;
     left: 310;
     transition: width 0.5s, filter 0.5s;
 }
