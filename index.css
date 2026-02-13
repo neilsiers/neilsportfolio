@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     font-family: Ramunebear, Helvetica, Arial, sans-serif;
-    src: url(Ramunebear-Regular.otf);
     cursor: url(images/cursorpoint.png), auto !important;
 }
 html {

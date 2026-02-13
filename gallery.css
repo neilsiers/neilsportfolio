@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Ramunebear;
-    src: url(Ramunebear-Regular.otf);
+    font-family: Ramunebear, Helvetica, Arial, sans-serif;
 }
 html {
   scrollbar-width: thin;
@@ -24,6 +23,10 @@ body {
         background-position: -200px 0;
     }
     }
+@font-face {
+    font-family: 'Ramunebear';
+    src: url('Ramunebear-Regular.woff') format('woff');
+}
 /*BOX*/
 #gallerybox {
     justify-content: center;
@@ -249,4 +252,245 @@ marquee {
     width: 15.1vw;
     filter: drop-shadow(0 0 0.75rem #fbf3a1);
     transition-timing-function: ease;
+}
+/*DESKTOP*/
+@media (min-width: 1950px) {
+}
+/*LAPTOP - WIP*/
+@media (min-width:1920px) and (max-width: 1949px) {
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 967px) {
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+    }
+    /*BOX*/
+    #gallerybox {
+        justify-content: center;
+    }
+    #gallerybox .label {
+        position: absolute;
+        z-index: 2;
+        right: 10%;
+        rotate: 16deg;
+    }
+    #gallerybox .gallerycontainer {
+        position: absolute;
+        z-index: 1;
+    }
+    marquee {
+        background-color: #f8d44c;
+        color: #cd2e4c;
+        font-size: 155%;
+    }
+    /*LABEL*/
+    .label {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        text-align: center;
+    }
+    .label .head{
+        position: absolute;
+        z-index: 2;
+        width: 9vw;
+        right: -3%;
+        rotate: 15deg;
+    }
+    .label .bar{
+        position: relative;
+        z-index: 0;
+        width: 30%;
+    }
+    .label h1 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        color: #414148;
+        padding-left: 76%;
+        font-size: 150%;
+    }
+    /**GALLERY CONTAINER**/
+    #gallerycontainer {
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        border-radius: 20px;
+        background-color: #cd2e4c;
+        background-clip: padding-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5%;
+        padding: 20%;
+    }
+    /**GAL NAV**/
+    #galnav {
+        background-color: #549bf4;
+        border: 20px solid;
+        border-image: url('https://i.postimg.cc/zVJBz1m3/bordefr.png') 18 round;
+        border-image-slice: fill;
+        background-clip: padding-box;
+        height: 40vw;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 100%;
+    }
+    #galnav a {
+        text-decoration: none;
+        color: #f8d44c;
+        padding: 0px 0px 40px 0px;
+    }
+    #galnav a:hover {
+        color: #fbf3a1;
+        transition: color 0.5s;
+    }
+    /**GALLERY**/
+    #gallery {
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/0jF2LBzY/border.png') 20 round;
+        border-image-slice: fill;
+        background-color: #fbf3a1;
+        background-clip: padding-box;
+        overflow: auto;
+        white-space: nowrap;
+        height: 40vw;
+        width: 68vw;
+        padding: 20px;
+    }
+    #galleryimg {
+        width: 20vw;
+    }
+    .hidden {
+        display: none;
+    }
+    #galleryimg {
+        width: 20vw; 
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.4s ease; 
+    }
+    /**GRAPHICS**/
+    #graphics {
+        display: block;
+    }
+    /**ANIMATION**/
+    #animation img {
+        width: 15vw;
+    }
+    /**PERSONAL**/
+
+    /**FOOTER**/
+    #footer {
+        height: 200px;
+        width: 102vw;
+        overflow: hidden;
+        background-image: url('images/cloudfooter.png');
+        background-repeat: repeat;
+        background-position: 0 0;
+        animation: float 30s linear infinite;
+    }
+        @keyframes float {
+
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 400px 0;
+        }
+        }
+    .footerinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .footerlinks .gmail {
+        position: relative;
+        display: inline-block; 
+        animation-name: cloud1;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        background-image: url('images/cloud.png');
+        background-size: 7vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+    }
+    @keyframes cloud1 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px); 
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .footerlinks .linkedin {
+        position: relative;
+        display: inline-block;
+        animation-name: cloud2;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        background-image: url('images/cloud2.png');
+        background-size: 7vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+    }
+    @keyframes cloud2 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px); 
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .footerlinks a{
+        text-decoration: none;
+        color: #414148;
+        font-size: 1.5vw;
+    }
+    .footerlinks a:hover{
+        color: #549bf4;
+        transition: color 0.6s;
+    }
+    .copyright {
+        padding-top: 60px;
+        justify-content: center;
+        text-align: center;
+        color: #414148;
+    }
+    /*HOME*/
+    #gallerybox .home {
+        position: absolute;
+        z-index: 2;
+        bottom: 100px;
+        left: -170px;
+    }
+    #gallerybox .home img{
+        width: 15vw;
+        position: absolute;
+        z-index: 1;
+        bottom: -60;
+        left: 310;
+        transition: width 0.5s, filter 0.5s;
+    }
+    #gallerybox .home img:hover {
+        width: 15.1vw;
+        filter: drop-shadow(0 0 0.75rem #fbf3a1);
+        transition-timing-function: ease;
+    }
 }

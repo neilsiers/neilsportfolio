@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Ramunebear;
-    src: url(Ramunebear-Regular.otf);
+    font-family: Ramunebear, Helvetica, Arial, sans-serif;
     cursor: url(images/cursorpoint.png), auto !important;
 }
 html {
@@ -25,6 +24,10 @@ body {
         background-position: -400px 0;
     }
     }
+@font-face {
+    font-family: 'Ramunebear';
+    src: url('Ramunebear-Regular.woff') format('woff');
+}
 /*BLOG CONTAINER*/
 hr {
     border: #f8d44c 2px dotted;
@@ -36,7 +39,7 @@ hr {
     z-index: 0;
 }
 #blog #leftcolumn {
-    margin-top: 250px;
+    margin-top: 280px;
     padding: 30px;
 }
 #blog #rightcolumn {
@@ -47,7 +50,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .image {
     width: 10vw;
@@ -167,4 +170,16 @@ hr {
     background-color: #a7c44f;
     background-clip: padding-box;
     padding: 30px;
+}
+/*DESKTOP*/
+@media (min-width: 1950px) {
+}
+/*LAPTOP - WIP*/
+@media (min-width:1920px) and (max-width: 1949px) {
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 967px) {
+}
+/*MOBILE*/
+@media (max-width: 480px) {
 }

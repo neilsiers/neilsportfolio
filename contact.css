@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Ramunebear;
-    src: url(Ramunebear-Regular.otf);
+    font-family: Ramunebear, Helvetica, Arial, sans-serif;
 }
 html {
   scrollbar-width: thin;
@@ -24,6 +23,10 @@ body {
         background-position: -400px 0;
     }
     }
+@font-face {
+    font-family: 'Ramunebear';
+    src: url('Ramunebear-Regular.woff') format('woff');
+}
 /*SITE*/
 /*CONTAINER*/
 #contactcontainer {
@@ -53,7 +56,7 @@ body {
     text-align: center;
     color: #fbf3a1;
     width: 350px;
-    right: 360px;
+    right: 0%;
 }
 #bottom {
     position: absolute;
@@ -211,15 +214,10 @@ body {
 @media (min-width: 1921px) {
 }
 /*LAPTOP - WIP*/
-@media (min-width:768px) and (max-width: 1920px) {
-}
-/*TABLET*/
-@media (min-width: 481px) and (max-width: 767px) {
-}
-/*MOBILE*/
-@media (max-width: 480px) {
+@media (min-width:768px) and (max-width: 920px) {
     #full {
-        padding-top: 50px;
+        width: 20px;
+        padding-top: 0px;
     }
     /*CONTAINER*/
     #contactcontainer {
@@ -237,7 +235,7 @@ body {
     #middle {
         position: relative;
         z-index: 2;
-        right: -60;
+        right: -270;
         bottom: -190;
     }
     #textbox {
@@ -248,21 +246,21 @@ body {
         border-image-slice: fill;
         background-color: #cd2e4c;
         background-clip: padding-box;
-        text-align: center;
+        font-size: 1.3vw;
         color: #fbf3a1;
-        width: 350px;
-        right: 60px;
-        top: 50;
+        width: 450px;
+        left: 660px;
+        top: 5%;
     }
     #bottom {
         position: absolute;
         z-index: 2;
-        top: 170px;
-        right: 50px;
+        top: 290px;
+        right: 130px;
     }
     /*MARQUEE*/
     .marquee img {
-        width: 25vw;
+        width: 20vw;
     }
     .marquee {
         top: 6em;
@@ -278,7 +276,7 @@ body {
     .phone {
         position: relative;
         z-index: 0;
-        width: 80vw;
+        width: 50vw;
     }
     .talk {
         position: absolute;
@@ -324,6 +322,212 @@ body {
         position: relative;
         z-index: 0;
         width: 20vw;
+    }
+    #bottom .home {
+        padding-left: 100px;
+        animation: home 3s ease-in-out infinite;
+    }
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 767px) {
+    #full {
+        padding-top: 0%;
+    }
+    /*CONTAINER*/
+    #contactcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vw;
+    }
+    #top {
+        position: absolute;
+        z-index: 1;
+        left: -25%;
+        top: 3%;
+    }
+    #middle {
+        position: relative;
+        z-index: 2;
+        right: -5%;
+        padding-top: 35%;
+    }
+    #textbox {
+        position: absolute;
+        z-index: 0;
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        background-color: #cd2e4c;
+        background-clip: padding-box;
+        text-align: center;
+        color: #fbf3a1;
+        width: 70%;
+        right: 12%;
+        top: 3%;
+    }
+    #bottom {
+        position: absolute;
+        z-index: 2;
+        top: 12%;
+        right: -10%;
+    }
+    /*MARQUEE*/
+    .marquee img {
+        width: 25%;
+    }
+    .marquee {
+        top: 6em;
+        position: relative;
+    }
+    .marquee a:hover {
+        animation-play-state: paused;
+    }
+    .marquee a p:hover {
+        color: #cd2e4c;
+    }
+    /*CALL IMG*/
+    .phone {
+        position: relative;
+        z-index: 0;
+        width: 90%;
+    }
+    .talk {
+        position: absolute;
+        z-index: 1;
+        width: 14%;
+        left: 25%;
+        top: 20%;
+    }
+    /*SOCIALS*/
+    .marquee a p {
+        font-size: 155%;
+    }
+    /*HOME*/
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+    }
+    .home p {
+        position: absolute;
+        z-index: 1;
+        font-size: 155%;
+        color: #fbf3a1;
+        transition: color 0.5s;
+    }
+    .home p:hover {
+        color: #cd2e4c;
+        transition-timing-function: ease-in-out;
+    }
+    .home img {
+        position: relative;
+        z-index: 0;
+        width: 40%;
+    }
+    #bottom .home {
+        padding-left: 20%;
+        animation: home 3s ease-in-out infinite;
+    }
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    #full {
+        padding-top: 50px;
+    }
+    /*CONTAINER*/
+    #contactcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5vw;
+    }
+    #top {
+        position: absolute;
+        z-index: 1;
+        left: -50%;
+        top: 0%;
+    }
+    #middle {
+        position: relative;
+        z-index: 2;
+        right: 0%;
+        padding-top: 50px;
+    }
+    #textbox {
+        position: absolute;
+        z-index: 0;
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        background-color: #cd2e4c;
+        background-clip: padding-box;
+        text-align: center;
+        color: #fbf3a1;
+        width: 80%;
+        right: 10%;
+        top: 1%;
+    }
+    #bottom {
+        position: absolute;
+        z-index: 2;
+        top: 15%;
+        right: -25%;
+    }
+    /*MARQUEE*/
+    .marquee img {
+        width: 19%;
+    }
+    .marquee {
+        top: 6em;
+        position: relative;
+    }
+    .marquee a:hover {
+        animation-play-state: paused;
+    }
+    .marquee a p:active {
+        color: #cd2e4c;
+    }
+    /*CALL IMG*/
+    .phone {
+        position: relative;
+        z-index: 0;
+        width: 90%;
+    }
+    .talk {
+        position: absolute;
+        z-index: 1;
+        width: 13%;
+        left: 25%;
+        top: 10%;
+    }
+    /*SOCIALS*/
+    .marquee a p {
+        font-size: 130%;
+    }
+    /*HOME*/
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+    .home p {
+        position: absolute;
+        z-index: 1;
+        font-size: 130%;
+        color: #fbf3a1;
+        transition: color 0.5s;
+    }
+    .home p:active {
+        color: #cd2e4c;
+        transition-timing-function: ease-in-out;
+    }
+    .home img {
+        position: relative;
+        z-index: 0;
+        width: 30%;
     }
     #bottom .home {
         padding-left: 100px;

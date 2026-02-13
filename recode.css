@@ -1,11 +1,11 @@
 /*DESKTOP*/
-@media (min-width: 1921px) {
+@media (min-width: 1950px) {
 }
 /*LAPTOP - WIP*/
-@media (min-width:768px) and (max-width: 1920px) {
+@media (min-width:1920px) and (max-width: 1949px) {
 }
 /*TABLET*/
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 967px) {
 }
 /*MOBILE*/
 @media (max-width: 480px) {

@@ -1,8 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Ramunebear;
-    src: url(Ramunebear-Regular.otf);
+    font-family: Ramunebear, Helvetica, Arial, sans-serif;
 }
 html {
   scrollbar-width: thin;
@@ -26,6 +25,10 @@ body {
         background-position: -400px 0;
     }
     }
+@font-face {
+    font-family: 'Ramunebear';
+    src: url('Ramunebear-Regular.woff') format('woff');
+}
 /*LABEL*/
 .label {
     display: flex;
@@ -321,4 +324,311 @@ body {
     justify-content: center;
     text-align: center;
     color: #414148;
+}
+/*DESKTOP*/
+@media (min-width: 1950px) {
+}
+/*LAPTOP - WIP*/
+@media (min-width:1920px) and (max-width: 1949px) {
+}
+/*TABLET*/
+@media (min-width: 481px) and (max-width: 967px) {
+}
+/*MOBILE*/
+@media (max-width: 480px) {
+    body {
+        background-image: none;
+    }
+    /*LABEL*/
+    .label {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: center;
+    }
+    .label .head{
+        z-index: 2;
+        width: 25%;
+        right: 35%;
+        bottom: 0%;
+        rotate: -15deg;
+    }
+    .label .bar{
+        position: relative;
+        z-index: 0;
+        width: 50%;
+    }
+    .label h1 {
+        position: absolute;
+        z-index: 1;
+        left: 5%;
+        color: #414148;
+        padding-left: 0%;
+        font-size: 150%;
+    }
+    .label #top{
+        position: absolute;
+        z-index: 2;
+        opacity: 0;
+    }
+    .label #btm{
+        position: absolute;
+        z-index: 1;
+    }
+    .label #top:active{
+        opacity: 100;
+        transition: opacity 0.6s;
+    }
+    /**FACTS**/
+    .facts {
+        background-color: #fbf3a1;
+        border: 20px solid;
+        border-image: url('images/yellowborder.png') 18 round;
+        border-image-slice: fill;
+        background-clip: padding-box;
+        position: relative;
+        z-index: 0;
+        left: 50%;
+        padding: 0%;
+        color: #414148;
+    }
+    .facts .factbox{
+        padding: 10%;
+        border: #549bf4 5px dotted;
+    }
+    .facts p {
+        padding-top: 0%;
+    }
+    .facts .font {
+        font-size: 100%;
+        color: #cd2e4c;
+    }
+    /**services**/
+    .services {
+        background-color: #fbf3a1;
+        border: 20px solid;
+        border-image: url('images/yellowborder.png') 18 round;
+        border-image-slice: fill;
+        background-clip: padding-box;
+        position: absolute;
+        z-index: 2;
+        right: 0%;
+        padding: 0%;
+        color: #414148;
+    }
+    .services .box{
+        padding: 0%;
+        border: #549bf4 5px dotted;
+    }
+    .services p {
+        padding-top: 10%;
+    }
+    /**ABOUT**/
+    #aboutme {
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        padding-left: 0%;
+    }
+    #aboutme .label {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+    }
+    #aboutme .facts {
+        position: absolute;
+        z-index: 1;
+        bottom: 50%;
+    }
+    #aboutme #about {
+        position: relative;
+        z-index: 0;
+    }
+    #about {
+        width: 110%;
+    }
+    #about .floating {
+        position: relative;
+        z-index: 1;
+        top: 0%;
+    }
+    #about .textbox {
+        position: relative;
+        z-index: 0;
+    }
+    /**TEXT**/
+    .textbox {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        border: 20px solid;
+        border-image: url('https://i.ibb.co/5gs1tnVw/border.png') 18 round;
+        border-image-slice: fill;
+        border-radius: 20px;
+        background-color: #cd2e4c;
+        color: #f9f8f4;
+        font-size: 140%;
+        background-clip: padding-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5%;
+        padding: 10%;
+    }
+    .textbox p {
+        padding-top: 10%;
+    }
+    /**ME**/
+    #about .me {
+        width: 30%;
+        left: 0%;
+        top: 0%;
+        position: absolute;
+        z-index: 1;
+        animation: bears 3s ease-in-out infinite;
+    }
+        @keyframes bears {
+            0% {
+                    transform: translateY(0);
+            }
+
+            50% {
+                    transform: translateY(-10px);
+            }
+
+            100% {
+                    transform: translateY(0);
+            }
+        }
+    .floating .cloud1 {
+        right: -210px;
+        bottom: 20px;
+        width: 6vw;
+        position: absolute;
+        z-index: 0;
+        animation: cloud 3s ease-in-out infinite;
+    }
+        @keyframes cloud {
+            0% {
+                    transform: translateY(0);
+            }
+
+            50% {
+                    transform: translateY(10px);
+            }
+
+            100% {
+                    transform: translateY(0);
+            }
+        }
+    .floating .cloud2 {
+        left: -30px;
+        bottom: 190px;
+        width: 6vw;
+        position: absolute;
+        z-index: 2;
+        animation: float2 3s ease-in-out infinite;
+    }
+        @keyframes float2 {
+            0% {
+                    transform: translateY(0);
+            }
+
+            50% {
+                    transform: translateY(10px);
+            }
+
+            100% {
+                    transform: translateY(0);
+            }
+        }
+    /**FOOTER**/
+    #footer {
+        height: 210px;
+        width: 100vw;
+        overflow: hidden;
+        background-image: url('images/cloudfooter.png');
+        background-repeat: repeat;
+        background-position: 0 0;
+        animation: float 30s linear infinite;
+    }
+        @keyframes float {
+
+        from {
+            background-position: 0 0;
+        }
+
+        to {
+            background-position: 400px 0;
+        }
+        }
+    .footerinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .footerlinks .gmail {
+        position: relative;
+        display: inline-block; 
+        animation-name: cloud1;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        background-image: url('images/cloud.png');
+        background-size: 7vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+    }
+    @keyframes cloud1 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(10px); 
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .footerlinks .linkedin {
+        position: relative;
+        display: inline-block;
+        animation-name: cloud2;
+        animation-duration: 4s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        background-image: url('images/cloud2.png');
+        background-size: 7vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 30px;
+    }
+    @keyframes cloud2 {
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px); 
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .footerlinks a{
+        text-decoration: none;
+        color: #414148;
+        font-size: 1.5vw;
+    }
+    .footerlinks a:hover{
+        color: #549bf4;
+        transition: color 0.6s;
+    }
+    .copyright {
+        padding-top: 60px;
+        justify-content: center;
+        text-align: center;
+        color: #414148;
+    }
 }
