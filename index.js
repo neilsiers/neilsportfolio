@@ -1,14 +1,14 @@
 /*STATUS BOX*/
 const mood = {type:"mood"};
-mood.feel = "sore";
+mood.feel = "lazy";
 document.getElementById("feeling").innerHTML = "feeling: " + mood.feel; 
 
 const comms = {type:"comms"};
-comms.now = "closed";
+comms.now = "limited";
 document.getElementById("commissions").innerHTML = "commissions: " + comms.now; 
 
 const cur = {type:"currently"};
-cur.now = "snoozing";
+cur.now = "gaming";
 document.getElementById("currently").innerHTML = "currently: " + cur.now; 
 
 /*MUSICPLAYER */
