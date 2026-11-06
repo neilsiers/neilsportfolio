@@ -1,6 +1,6 @@
 /*STATUS BOX*/
 const mood = {type:"mood"};
-mood.feel = "lazy";
+mood.feel = "busy";
 document.getElementById("feeling").innerHTML = "feeling: " + mood.feel; 
 
 const comms = {type:"comms"};
@@ -8,7 +8,7 @@ comms.now = "limited";
 document.getElementById("commissions").innerHTML = "commissions: " + comms.now; 
 
 const cur = {type:"currently"};
-cur.now = "gaming";
+cur.now = "updating portfolio";
 document.getElementById("currently").innerHTML = "currently: " + cur.now; 
 
 /*MUSICPLAYER */
